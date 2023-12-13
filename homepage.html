@@ -1,11 +1,9 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <img src="images\Banner 1000.png" alt="Banner Site" srcset="images\Banner 1000.png 1000w,images\Banner 500.png 500w">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
 <title>Gym R Us Homepage</title>
     </head>
-    <!-- This is the main page where users will first see when entering URL. It helps navigate the users. -->
     <style>
     p {
         text-align:center
@@ -14,7 +12,7 @@
         text-align:center 
        }
        input {
-     background-color: #079cf3;
+     background-color: white;
      border: none;
      color: white;
      padding: 15px 32px;
@@ -42,19 +40,25 @@
     <div class="column">
     <main>
         <p>Welcome to <em>Gym R Us</em> - Your Ultimate Fitness Hub!</p>
-        <p><strong>Stop Faze ruggin it!</strong></p>
-        <form action="store.html">
-            <input type="submit" value="SIGN ME UP"  />
+        <p><strong>Get BIG Today!</strong></p>
+        <form id="signupForm" action="video.html" onsubmit="return validateForm()">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="SIGN ME UP" />
         </form>
     </div>
     <div class="column">
         <ul>
             <h2>Image Gallery</h2>
-            <img src="images\1a.jpg" alt = "Jidion car" width=200 height=300>
-            <img src="images\6362955db1760d0019d98dda.webp" alt = "Jidion face" width=500 height=600>
-            <img src="images\channels4_profile.jpg" alt = "Jidion profile" width=200 height=300>
-            <img src="images\RM-Jidion-op.webp" alt = "Jidion drip" width=500 height=600>
-            <img src="images\jidion-nba-game.jpg" alt = "Jidion nba" width=400 height=600>
+            <img src="images\gallery1.jpg" alt = "biceps curl " width=200 height=300>
+            <img src="images\gallery2.jpg" alt = "No Pain No Gain" width=500 height=600>
+            <img src="images\gallery3.jpg" alt = "Dumbbell workout" width=200 height=300>
+            <img src="images\gallery4.jpg" alt = "Anatomy of back" width=500 height=600>
+            <img src="images\gallery5.jpg" alt = "Workout Sheet" width=400 height=600>
         </ul>
     </div>
 </div>

@@ -160,3 +160,13 @@ input[type="checkbox"] {
   display: inline;
   margin-right: 10px;
 }
+
+#signupForm input[type="submit"] {
+  background-color: #4CAF50; 
+  color: white;
+  cursor: pointer;
+}
+
+#signupForm input[type="submit"]:hover {
+  background-color: #45a049; 
+}
